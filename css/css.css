@@ -1,0 +1,97 @@
+.head
+{
+  	width: 100%;
+   	height: 80px;
+ 	position: fixed;
+   	background-color:rgba(255, 255, 255, 0.27);
+   	border-bottom: 4px solid green;
+
+}
+.headmain
+{
+	width: 1200px;
+	height: 100px;
+    margin-left: auto;
+
+  
+}
+.navg
+{
+	width:700px;
+	height: 100px;
+	
+	float: right; 
+
+	
+
+
+}
+.navg ul
+{
+	margin: auto;
+	position: relative;
+	top: 35px;
+	padding: 5px;
+	
+}
+.navg ul  li
+{
+	display: inline-block;
+	padding: 10px;
+	
+	list-style-type: none;
+	float: left;
+	margin: 5px;
+	font-size: 12px;
+	transition:background-color 0.5s ease;
+
+
+}
+.navg ul li:hover
+{
+	background-color: #25937C;
+
+
+}
+.icon
+{
+	width:200px;
+	height: 100px;
+    float: left;
+
+
+
+}
+
+.slider
+{
+	width: 100%;
+	height: 400px;
+	opacity: 12;
+	margin: auto;
+	border: 1px solid black;
+	margin-top: 60px;
+
+	background-color: #fffblack;
+
+
+
+}
+.footer
+{
+
+	width: 100%;
+	height: 250px;
+	margin: auto;
+	border: 1px solid black;
+	background-color:#1B3937;
+	float: left;
+
+}
+.srch{
+	border-radius: 50px;
+	background-color: black;
+	margin-top: -25px;
+	margin-right: 35px;
+	float: right;
+}
