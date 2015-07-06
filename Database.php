@@ -7,7 +7,7 @@ error_reporting(E_ALL);
  	private $hostname = "localhost";
 	private $username = "root";
 	private $password = "admin";
-	private $dbname = "Psybo";
+	private $dbname = "survey";
 	private $condb="";
 	
 
@@ -32,6 +32,7 @@ error_reporting(E_ALL);
 		{
 			die('connect_error('.$this->condb->connect_errorno.')'.$this->condb->connect_errorno);
 		}
+		else
 		
 	}
 
