@@ -1,37 +1,3 @@
-<?php
-
-require_once('Database.php');
-
-
-	$db= new Database('localhost','root','admin','survey');
-	// $db->insert();
-	$table_name="user";
-	$fields=array("name","email","phone");
-	$values=array("$name","sadfghs","66");
-	$db->insert($table_name, $fields, $values);
-
-
-$name = '';
-$email = '';
-$phone ='';
-
-	if (isset($_POST['Register']))
-	{
-		$name=$_POST['name'];
-		$email=$_POST['email'];
-		$phone=$_POST['phone'];
-	}
-
-?>
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,33 +44,15 @@ $phone ='';
 		</div>
 	</div>
 	<div class="content">
-	<div class="contentview">
-	<div class="img">
-		
-			<div class="regbt"><h2>Click Register</h2> </div>
+	<div class="view">
+		<ul>
+			<li><h2> your result</h2> </li>
 
-		
-	</div>
+		</ul>
+		<div class="mark">
+	
 	</div>
 
-	<div class="popup">
-			<div class="regform">
-			<div class="closebt">X</div>
-			<form method="post" action="test.html">
-					<ul>
-						<li class="l1"><label>Name</label>
-						<input type="text" name="name" id="name"></li>
-						<li class="l2"><label>Email</label>
-						<input type="text" name="email"></li>
-						<li class="l3"><label>Mobile</label>
-						<input type="text" name="phone"></li>
-						<li><button type="" class="button" name="Register">Submit</button></li>
-					</ul>
-		
-					
-				</form>
-				
-			</div>
 		</div>
 		<div class="footer">
 		<div class="addres">

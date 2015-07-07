@@ -2,8 +2,8 @@
 
 error_reporting(E_ALL);
 
- class Database
- {
+class Database
+{
  	private $hostname = "localhost";
 	private $username = "root";
 	private $password = "admin";
@@ -32,7 +32,7 @@ error_reporting(E_ALL);
 		{
 			die('connect_error('.$this->condb->connect_errorno.')'.$this->condb->connect_errorno);
 		}
-		else
+		
 		
 	}
 
@@ -61,13 +61,13 @@ error_reporting(E_ALL);
 
 		for ($i=0; $i <$cnt; $i++) 
 		{ 
-			if (is_string($values[$i]))
+			if (is_numeric($values[$i]))
 			 {
-			 	$value_type.="s";
+			 	$value_type.="i";
 			 }
 			 else
 			 {
-			 	$value_type.="i";
+			 	$value_type.="s";
 			 }
 
 	    }
@@ -82,20 +82,21 @@ error_reporting(E_ALL);
 
 	    }
 	    call_user_func_array(array(&$stmt ,'bind_param'), $params);
+	   	//var_dump($params);
 	    // $stmt ->bind_param($value_type,$values[0],$values[1]);
 	   	// $stmt ->bind_param($value_type,$values[]);
 	    $stmt->execute();
 
 
 
-	    if ($stmt===FALSE)
+	    /*if ($stmt===FALSE)
 	    {
 	    	echo "error";
 	    }
 	    else
 	    {
 	    	echo "one created,value inserted";
-	    }
+	    }*/
 	    //$stmt->bind_param("");
 
 	    //var_dump($insert);
@@ -103,8 +104,12 @@ error_reporting(E_ALL);
 
 	public function select($table,$fields,$where)
 	{
+		if($fields!=null)
+		{
 		$count= count($fields);
 		$fields=implode(',',$fields);
+	    }
+	    
 		$select="SELECT ";
 
 		if($fields==null)
@@ -160,7 +165,7 @@ error_reporting(E_ALL);
 		$fields = implode(',',$fields);
   		$update .=" WHERE ".$where;
 
-		var_dump($update);
+		//var_dump($update);
 
   		$type="";
 		for ($i=0; $i <$count; $i++) 
@@ -217,11 +222,13 @@ error_reporting(E_ALL);
         }
     }
 }
+
+
 	
 
  
  
- 
+ /*
 	$db= new Database('localhost','root','admin','Psybo');
 	// $db->insert();
 	$table_name="employees";
@@ -229,13 +236,13 @@ error_reporting(E_ALL);
 	$values=array("naseeba","sadfghs");
 	$db->insert($table_name, $fields, $values);
 
-	
+	*/
 	/*$fields=array("");
 	$where=array("id","1");
 	$result=$db->select($table_name,$fields,$where);
 	var_dump($result);*/
 	
- 	$where="id=4";
+ 	//$where="id=4";
  	// $fields=array("name='AA'","address='SS'");
  	
 	// $db->update($table_name, $fields, $values, $where);
