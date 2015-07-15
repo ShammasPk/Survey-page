@@ -1,0 +1,38 @@
+.vtab{
+	border:1px solid #ddd;
+	background: #fafafa;
+}
+.vtab th{
+	border-bottom:1px solid #ddd;
+	padding: 4px;
+}
+
+
+.vtab td{
+	border-bottom:1px dashed #ddd;
+	padding: 4px;
+
+}
+.vtab tr:nth-child(even){
+	background: #fcfcfc;
+	padding: 4px;
+
+}
+.answer{
+	color: red;
+	background: #555;
+}
+.que{
+ 
+   border-radius:25px;
+   text-align:center;
+   background-color:gray;
+   text-decoration:none;
+
+}
+.loginmain{
+    width:100%;
+    height:100%;
+    background-color:green;
+
+}

@@ -5,8 +5,7 @@
 	<title>psyservey</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/exam.css">
->
-	
+
 </head>
 <body>
 	<div class="header">
@@ -18,7 +17,7 @@
 				<ul >
 					<li>HOME</li>
 					<li>FEATURES</li>
-					<li>CONTACT US</li>
+					<li>CONTACT US</a></li>
 				</ul></div>
 	<div class="logo">
 		<img src="image/logo.png" alt="" class="logo">
@@ -26,34 +25,28 @@
 		</div>
 	</div>
 	<div class="content">
-	<div class="view">
+
+	<div class="main">
+		<h1>Admin panel</h1>
+
+		<form action="">
 		<ul>
-			<li><h2> your result</h2> </li>
+			<li >
+				<h3 align="center"> ADD category</h3>
+				<table align="center" width="100%" cellpadding="10" cellspacing="5" border="0"> 
+				<tr>
+				<td>Enter Category Name</td>
+				<td><input type="text" name=""></td>
+				</tr>
+				<tr>
+				<td></td>
+				<td><input type="submit" name="" value ="Add"></td>
+				</tr>
+				</table>
+				</li></ul></form>
+					
 
-		</ul>
-		<div class="mark">
-	
-	</div>
-
-		</div>
-		<div class="footer">
-		<div class="addres">
-		<div class="add">
-			<ul>
-				<li><h2>our address</h2></li>
-				<li><label>psybo technologies</label></li>
-				<li><label>v2 tower,opp old bus stand</label></li>
-				<li>pandikad road ,manjeri,676121</li>
-				<li>www.psybotechnologies.com</li>
-				<li>info@www.psybotechnologies.com</li>
-			</ul></div>
-		</div>
-	
 			
-		</div>
-		</div>
 
-	
-	
 </body>
 </html>
